@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Marketing Allocation</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/app.css">
+</head>
+
+<body class="pp_body">
+  <div class="title">
+    <h1>Q4 2020 Marketing spend budget</h1>
+  </div>
+  <div class="container">
+    <div class="allocations">
+      <div class="starting-budget">
+        <h2>Stated budget:</h2>
+        <span id="budget"></span>
+      </div>
+      <div class="total-allocated">
+        <h2>Total Allocated:</h2>
+        <span id="allocated">0</span>
+      </div>
+      <div class="remaining-budget">
+        <h2>Remaining Budget:</h2>
+        <span id="remaining"></span>
+      </div>
+    </div>
+    <div class="slidecontainer">
+
+      <div class="slide_box">
+        <div class="slide_title">
+          <span><strong>1.</strong> Digital Marketing</span>
+        </div>
+        <div class="slide_section">
+          <div class="slide_input">
+            <input type="range" min="0" max="2500" value="0" step="250" class="slider">
+          </div>
+          <div class="slide_total">-</div>
+        </div>
+      </div>
+      <div class="slide_box">
+        <div class="slide_title">
+          <span><strong>2.</strong> Print Marketing</span>
+        </div>
+        <div class="slide_section">
+          <div class="slide_input">
+            <input type="range" min="0" max="2500" value="0" step="250" class="slider">
+          </div>
+          <div class="slide_total">-</div>
+        </div>
+      </div>
+      <div class="slide_box">
+        <div class="slide_title">
+          <span><strong>3.</strong> Ad spots</span></div>
+        <div class="slide_section">
+          <div class="slide_input">
+            <input type="range" min="0" max="2500" value="0" step="250" class="slider">
+          </div>
+          <div class="slide_total">-</div>
+        </div>
+      </div>
+      <!-- <button id="mybtn">Display</button> -->
+    </div>
+  </div>
+
+
+  <!-- Scripts -->
+  <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
