@@ -23,7 +23,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 600;
 }
 
@@ -98,27 +98,19 @@ span {
 
 .allocations {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
   text-align: center;
 
+  span {
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+  }
+
   @media all and (max-width: 785px) {
     justify-content: space-between;
   }
-
-  @media all and (max-width: 500px) {
-
-    h2 {
-      opacity: .75;
-    }
-
-    span {
-      font-size: 2.5rem;
-      letter-spacing: 1px;
-    }
-  }
-
 
   div {
     margin: 0 1%;
@@ -138,7 +130,7 @@ span {
 
   .starting-budget,
   .total-allocated {
-    width: 35%;
+    width: 48%;
 
     @media all and (max-width: 785px) {
       width: 48%;

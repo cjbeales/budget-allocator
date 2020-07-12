@@ -16,7 +16,7 @@ h1 {
   text-transform: uppercase; }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 600; }
 
 h3 {
@@ -78,26 +78,23 @@ span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   text-align: center; }
+  .allocations span {
+    font-size: 2.2rem;
+    letter-spacing: 1px; }
   @media all and (max-width: 785px) {
     .allocations {
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
       justify-content: space-between; } }
-  @media all and (max-width: 500px) {
-    .allocations h2 {
-      opacity: .75; }
-    .allocations span {
-      font-size: 2.5rem;
-      letter-spacing: 1px; } }
   .allocations div {
     margin: 0 1%;
     padding: 20px;
@@ -112,7 +109,7 @@ span {
         background: transparent; } }
   .allocations .starting-budget,
   .allocations .total-allocated {
-    width: 35%; }
+    width: 48%; }
     @media all and (max-width: 785px) {
       .allocations .starting-budget,
       .allocations .total-allocated {
