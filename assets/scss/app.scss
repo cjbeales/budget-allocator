@@ -102,6 +102,8 @@ span {
   align-items: center;
   flex-wrap: wrap;
   text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
 
   span {
     font-size: 2.2rem;
