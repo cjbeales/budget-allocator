@@ -39,11 +39,14 @@ function getResults() {
   }, 0);
 
   let remainingBudget = statedBudget - sumTotal;
-
   // Output total allocated
   document.getElementById('allocated').innerHTML = '£' + sumTotal;
   remaining.innerHTML = '£' + remainingBudget;
-
+  if (remainingBudget < 0) {
+    remaining.style.color = "red";
+  } else {
+    remaining.style.color = "#ffffff";
+  }
 };
 
 for (let a = 0; a < slider.length; a++) {

@@ -8,6 +8,7 @@ $ppYellow: #FFDE00;
 
 html {
   font-size: 62.5%;
+  font-family: 'Open Sans', sans-serif;
 }
 
 p {
@@ -17,26 +18,17 @@ p {
 
 h1 {
   font-size: 3rem;
-
-  @media all and (max-width: 550px) {
-    font-size: 2rem;
-  }
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 h2 {
   font-size: 2.5rem;
-
-  @media all and (max-width: 550px) {
-    font-size: 1.85rem;
-  }
+  font-weight: 600;
 }
 
 h3 {
   font-size: 2rem;
-
-  @media all and (max-width: 550px) {
-    font-size: 1.5rem;
-  }
 }
 
 h1,
@@ -46,37 +38,34 @@ h4 {
   line-height: 1.4;
 }
 
+@media all and (max-width: 500px) {
+  h1 {
+    font-size: 2.5rem;
+  }
 
+  h2 {
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+}
 
 p,
 span {
   font-weight: 400;
   line-height: 1.6;
   font-size: 1.8rem;
-
-  @media all and (max-width: 959px) {
-    font-size: 2rem;
-  }
-
-  @media all and (max-width: 550px) {
-    font-size: 1.6rem;
-  }
 }
 
-#demo {
-  font-weight: 400;
-  line-height: 1.6;
-  font-size: 3rem;
-  color: $ppYellow;
-
-  @media all and (max-width: 550px) {
-    font-size: 1.8rem;
-  }
-}
 
 .pp_body {
   background: linear-gradient(to bottom, #00263d 0%, #013453 100%);
   color: #fff;
+  min-height: 100vh;
+  height: auto;
 }
 
 .header {
@@ -86,10 +75,6 @@ span {
   text-align: right;
   background: transparent;
   position: relative;
-
-  @media all and (max-width: 550px) {
-    text-align: center;
-  }
 
   img {
     max-height: 50px;
@@ -101,14 +86,13 @@ span {
   max-width: 600px;
   text-align: center;
 
-  @media all and (max-width: 750px) {
+  @media all and (max-width: 785px) {
     padding: 0 25px;
   }
 }
 
 .overall_total {
   text-align: center;
-
   margin: 0 auto;
 }
 
@@ -119,20 +103,60 @@ span {
   flex-wrap: wrap;
   text-align: center;
 
+  @media all and (max-width: 785px) {
+    justify-content: space-between;
+  }
+
+  @media all and (max-width: 500px) {
+
+    h2 {
+      opacity: .75;
+    }
+
+    span {
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+    }
+  }
+
+
   div {
     margin: 0 1%;
     padding: 20px;
     background: #003D63;
+
+    @media all and (max-width: 785px) {
+      margin: 10px 0;
+    }
+
+    @media all and (max-width: 500px) {
+      padding: 10px;
+      margin: 0;
+      background: transparent;
+    }
   }
 
   .starting-budget,
   .total-allocated {
-    width: 48%;
+    width: 35%;
+
+    @media all and (max-width: 785px) {
+      width: 48%;
+    }
+
+    @media all and (max-width: 500px) {
+      width: 100%;
+    }
   }
 
   .remaining-budget {
     width: 100%;
     margin-top: 15px;
+    background: transparent;
+
+    @media all and (max-width: 500px) {
+      margin-top: 0;
+    }
   }
 }
 
@@ -155,53 +179,41 @@ span {
     margin: 0 auto;
 
     @media all and (max-width: 1200px) {
-      width: 60%;
+      width: 80%;
     }
 
-    @media all and (max-width: 959px) {
-      width: 65%;
-    }
-
-    @media all and (max-width: 750px) {
-      width: 90%;
-      padding: 50px 25px 50px 10px;
-    }
-
-
-    .slides_divide {
+    @media all and (max-width: 785px) {
       width: 100%;
+      padding: 50px 25px;
+    }
 
-      @media all and (max-width: 959px) {
-        width: 100%;
-      }
-
-      @media all and (max-width: 750px) {
-        width: 90%;
-      }
-
+    @media all and (max-width: 500px) {
+      padding: 50px 15px;
     }
 
     .slide_box {
-      margin-bottom: 6em;
+      margin-bottom: 60px;
 
       @media all and (max-width: 959px) {
-        margin-bottom: 7em;
+        margin-bottom: 50px;
+      }
+
+      @media all and (max-width: 500px) {
+        margin-bottom: 45px;
       }
 
       .slide_title {
         max-width: 650px;
         margin-bottom: 1.5em;
 
-        @media all and (max-width: 959px) {
-          max-width: 85%;
-        }
-
-        @media all and (max-width: 750px) {
-          max-width: 100%;
+        @media all and (max-width: 500px) {
+          margin-bottom: 0;
         }
 
         span {
           color: #fff;
+          font-size: 2rem;
+          font-weight: 600;
         }
 
         strong {
@@ -216,11 +228,19 @@ span {
         justify-content: space-between;
         align-items: center;
 
+        @media all and (max-width: 500px) {
+          flex-wrap: wrap;
+        }
+
         .slide_input {
           width: 80%;
 
           @media all and (max-width: 959px) {
             width: 85%;
+          }
+
+          @media all and (max-width: 500px) {
+            width: 100%;
           }
 
           .slider {
@@ -259,9 +279,6 @@ span {
             background: url(/assets/img/slider-thumb.png);
             background-size: cover;
             background-position: center center;
-            // border-radius: 50%;
-            // background: #fff;
-            // border: 8px solid #FFDE00;
             cursor: pointer;
             position: relative;
             z-index: 20;
@@ -270,7 +287,6 @@ span {
               width: 45px;
               height: 45px;
             }
-
           }
 
           .slider::-moz-range-thumb {
@@ -279,9 +295,6 @@ span {
             background: url(/assets/img/slider-thumb.png);
             background-size: cover;
             background-position: center center;
-            // border-radius: 50%;
-            // background: #fff;
-            // border: 8px solid #FFDE00;
             cursor: pointer;
             position: relative;
             z-index: 20;
@@ -302,6 +315,13 @@ span {
           @media all and (max-width: 959px) {
             text-align: right;
             font-size: 2.5em;
+          }
+
+          @media all and (max-width: 500px) {
+            width: 100%;
+            text-align: left;
+            margin-top: 10px;
+            order: 3;
           }
         }
 
